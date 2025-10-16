@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>KR2</title>
+</head>
+<body>
+    <header class="site-header elements-align-center">
+        <span>Рахманинов Савва Сергеевич</span>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">   
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav div-width-100">
+                    <a class="nav-link" href="#">Главная</a>
+                    <a class="nav-link" href="#">Проекты</a>
+                    <a class="nav-link" href="#">Дневник</a>
+                    <a class="nav-link" href="#">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid main-margin-top">
+        <div class="p-border-1 d-flex align-items-center justify-content-between"> 
+            <span>Мои проекты</span>
+            <div class="d-flex align-items-center justify-content-between gap-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Все
+            </button>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseHTML" role="button" aria-expanded="false" aria-controls="collapseExample">
+                HTML
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseJS" role="button" aria-expanded="false" aria-controls="collapseExample">
+                JS
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseReact" role="button" aria-expanded="false" aria-controls="collapseExample">
+                React
+            </a>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Все проекты</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card">
+                            <img src="./assets/HTML.png" alt="..." width="50">
+                            <img src="./assets/js.png" alt="..." width="50">
+                            <div class="card-body">
+                                <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Понял</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapse" id="collapseHTML">
+            <div class="card card-body">
+                HTML
+            </div>
+        </div>
+        <div class="collapse" id="collapseJS">
+            <div class="card card-body">
+                Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
+            </div>
+        </div>
+        <div class="collapse" id="collapseReact">
+            <div class="card card-body">
+                Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
